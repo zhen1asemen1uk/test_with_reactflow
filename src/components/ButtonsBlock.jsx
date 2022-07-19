@@ -9,10 +9,10 @@ const ButtonsBlock = ({ setNodes }) => {
                     setNodes((p) => [
                         ...p,
                         {
-                            id: `${p.length + 2}`,
+                            id: `${p.length + 1}`,
                             type: "input",
                             data: { label: <NodeComponent apple /> },
-                            position: { x: 100, y: `${p.length + 2}0` },
+                            position: { x: 100, y: (p.length + 2) * 10 },
                             sourcePosition: "right",
                         },
                     ]);
@@ -20,16 +20,16 @@ const ButtonsBlock = ({ setNodes }) => {
             >
                 Add Apple
             </button>
-            
+
             <button
                 onClick={() => {
                     setNodes((p) => [
                         ...p,
                         {
-                            id: `${p.length + 2}`,
+                            id: `${p.length + 1}`,
                             type: "output",
                             data: { label: <NodeComponent reverse /> },
-                            position: { x: 650, y: `${p.length + 2}0` },
+                            position: { x: 650, y: (p.length + 2) * 10 },
                             targetPosition: "left",
                         },
                     ]);

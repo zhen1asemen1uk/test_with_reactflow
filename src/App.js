@@ -41,24 +41,7 @@ const App = () => {
                 targetPosition: "left",
             },
         ]);
-
-        setEdges([
-            {
-                id: "e1a-2",
-                source: "1",
-                sourceHandle: "a",
-                animated: true,
-                style: { stroke: "#fff" },
-            },
-            {
-                id: "e2b-1",
-                target: "2",
-                sourceHandle: "b",
-                animated: true,
-                style: { stroke: "#fff" },
-            },
-        ]);
-    }, [setEdges, setNodes]);
+    }, [setNodes]);
 
     const onConnect = useCallback(
         (params) =>
@@ -70,6 +53,7 @@ const App = () => {
             ),
         [setEdges]
     );
+
     return (
         <Wrapp>
             <ButtonsBlock setNodes={setNodes} />
