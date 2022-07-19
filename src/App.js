@@ -13,6 +13,7 @@ import NodeComponent from "./components/NodeComponent";
 import ButtonsBlock from "./components/ButtonsBlock";
 
 const Wrapp = styled.div`
+    padding: 5px;
     width: 100%;
     height: 100vw;
 
